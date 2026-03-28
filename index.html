@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorry Babuu 💖</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffd6e0, #ffe6f0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 10px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: pop 0.6s ease;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .heart {
+      font-size: 40px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    h1 {
+      color: #ff4d88;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left;
+      white-space: pre-line;
+    }
+
+    .btn-container {
+      margin-top: 15px;
+      position: relative;
+      height: 100px;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      background: #ff66a3;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px;
+      transition: 0.3s;
+      position: absolute;
+    }
+
+    #yesBtn {
+      left: 10%;
+    }
+
+    #noBtn {
+      right: 10%;
+    }
+
+    button:hover {
+      background: #ff3385;
+    }
+
+    .message {
+      display: none;
+      margin-top: 15px;
+      font-size: 18px;
+      color: #ff4d88;
+      font-weight: bold;
+      animation: fade 0.5s ease;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 480px) {
+      p {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="heart">💖</div>
+    <h1>Sorry Babuu 😔</h1>
+
+```
+<p>
+```
+
+Hello ji
+
+Babu suno I know tum bohot gussa ho merse kyuki Mera hi galti hai 🥲 last time bhi yahi galti kiye the 🥲 babu 👉👈 sorry yaar  , ham tumko dhund rahe the ki but aap aise jagah dikh jaoge soche hi nahi the 🥲
+
+Sorry na babuu , aap gussa ho toh mera dimag udhar hi chalega din bhar babuu 🥲
+👉👈 Ek hug karne ka Maan hai yaar zoor se apko 🫂 ,
+
+sorry babuu 👉👈 </p>
+
+```
+<div class="btn-container">
+  <button id="yesBtn" onclick="forgive()">Forgive Me 🥺</button>
+  <button id="noBtn" onclick="moveButton()">Not Forgive 😤</button>
+</div>
+
+<div id="msg" class="message">Yayyy 🥹💖 Thank you babuu!!</div>
+```
+
+  </div>
+
+  <script>
+    function forgive() {
+      document.getElementById("msg").style.display = "block";
+    }
+
+    function moveButton() {
+      let btn = document.getElementById("noBtn");
+      let x = Math.random() * 200 - 100;
+      let y = Math.random() * 80 - 40;
+
+      btn.style.transform = `translate(${x}px, ${y}px)`;
+    }
+  </script>
+
+</body>
+</html>
